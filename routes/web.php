@@ -1,10 +1,9 @@
 <?php
 
+use App\Http\Controllers\PrincipalController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PrincipalController::class, 'principal']);
 
 
 route::get('/login', function() {
